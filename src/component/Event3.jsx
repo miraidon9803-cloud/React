@@ -1,0 +1,19 @@
+import React from 'react'
+
+const Event3 = () => {
+  const handleOver =() =>{
+    console.log("마우스 들어옴")
+  }
+  const handleOut = () =>{
+    console.log("마우스 나감")
+  }
+  return (
+    <div onMouseOver={handleOver} onMouseOut={handleOut}>
+      <h2>마우스 오버 아웃</h2>
+      <p>마우스를 올려보세요</p>
+    </div>
+  );
+};
+
+
+export default Event3
